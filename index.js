@@ -3,7 +3,7 @@
 function fillArray() {
     const rows = +prompt("Введіть кількість рядків: ");
     const cols = +prompt("Введіть кількість стовпців: ");
-    if (rows <= 0 || cols <= 0) {
+    if (isNaN(rows) || isNaN(cols) || rows <= 0 || cols <= 0) {
         alert("Кількість рядків та стовпців має бути цілим позитивним числом");
         return;
     } 
